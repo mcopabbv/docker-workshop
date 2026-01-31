@@ -1,0 +1,14 @@
+import sys
+import pandas as pd
+
+
+
+print('Arguments',sys.argv)
+month=int(sys.argv[1])
+
+df = pd.DataFrame({"Day": [1, 2], "Num_Passengers": [3, 4]})
+df['month'] = month
+print(df.head())
+
+
+print (f'Hello Pipeline, month={month}')
